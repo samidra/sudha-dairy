@@ -1,0 +1,11 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.info-card{
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+
+}
+
+.info-card:hover {
+    transform: scale(1.1);
+}

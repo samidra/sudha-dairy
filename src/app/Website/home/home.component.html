@@ -1,0 +1,124 @@
+<ngx-slick-carousel class="carousel mb-5" #slickModal="slick-carousel" [config]="slideConfig" (init)="slickInit($event)"
+  (breakpoint)="breakpoint($event)" (afterChange)="afterChange($event)" (beforeChange)="beforeChange($event)">
+  <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+    <img src="{{ slide.img }}" alt="" height="550px" width="100%">
+  </div>
+</ngx-slick-carousel>
+
+<div class="container mt-lg-5 mt-2 p-lg-4 p-2" data-aos="zoom-in" data-aos-duration="2000">
+  <div class="row mt-5 p-lg-0 p-3">
+    <div class="col-lg-8 pt-3 about p-lg-5 p-2">
+      <h4>About Shahabad Dugdh Utpadak Sahakari Sangh</h4>
+
+      <p class="mt-3">Established in the year 1997, under the aegis of Bihar State Milk Co-operative Federation,
+        Shahabad Milk Union,
+        covers the vast and resourceful region along the colossal river Sone. The SMU was end implementing agency for
+        the Operation Flood Programme and undertakes Dairy Development activities on the Anand pattern within its areas
+        of operation. The establishment of union was a revolutionary step in itself, as it aimed to change the lives of
+        farmers in and around four districts of the historically important Shahabad region.
+      </p>
+      <div class="row">
+        <div class="col-8 readmorebtn p-lg-5 p-2" >
+      
+          <button type="button" class="btn btn-primary mb-3 mx-0 button-55"  routerLink="/aboutus/our-history" (click)="exit()">Read More <i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="col-lg-4 p-lg-4 p-3">
+      <div class="row p-lg-0 p-2">
+        <div class="col-12 mission p-lg-4 p-3">
+          <h3>Our Mission</h3>
+          <hr>
+          <p>Shahabad Dugdh Utpadak Sahakari Sangh Ltd will provide more cost & benefits to producers maintaining self
+            dependency and Union will turn into leading Union of Country maintaining quality at every level and
+            economical & social development of producers.</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="col-8 readmorebtn p-lg-5 p-2" >
+      
+      <button type="button" class="btn btn-primary mb-3 mx-0 button-55"  routerLink="/aboutus/our-history" (click)="exit()">Read More <i class="bi bi-arrow-right"></i></button>
+    </div> -->
+  </div>
+</div>
+<div class="container mt-lg-5 mt-2 p-lg-4 p-2">
+  <div class="row mt-5 p-lg-0 p-3 visionrow">
+    <h1>Our Vision</h1>
+    <div class="col-lg-4 col-md-6 col-12 mt-md-3 p-2 visioncol" data-aos="fade-left" data-aos-duration="1500">
+      <div class="visiondiv p-4">
+        <p>Honesty</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 mt-md-3 p-2 visioncol" data-aos="fade-right" data-aos-duration="1700">
+      <div class="visiondiv p-4">
+        <p>Quality</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 mt-md-3 p-2 visioncol" data-aos="fade-up" data-aos-duration="1900">
+      <div class="visiondiv p-4">
+        <p>Discipline</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 mt-md-3 p-2 visioncol" data-aos="fade-down" data-aos-duration="2100">
+      <div class="visiondiv p-4">
+        <p>Devoted Team Spirit</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 mt-md-3 p-2 visioncol" data-aos="fade-left" data-aos-duration="2300">
+      <div class="visiondiv p-4">
+        <p>Self Dependency</p>
+      </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12 mt-md-3 p-2 visioncol" data-aos="fade-right" data-aos-duration="2500">
+      <div class="visiondiv p-4">
+        <p>Transparency</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="containermt-lg-5 mt-2 p-lg-4 p-2" data-aos="zoom-in" data-aos-duration="2300">
+  <div class="row mt-5 p-lg-0 p-3 producthome">
+    <div class="col-12">
+      <h2 align="center">Our Products</h2>
+      <div class="col-12 mt-lg-5 mt-3">
+        <div class="row producthomerow">
+          <div class="col-lg-4 p-lg-4 producthomerowcol">
+            <img src="assets/images/mps.jpg" alt="" srcset="" height="300px">
+            <button type="button" class="btn btn-primary mt-5 button-55" routerLink="/milk" (click)="exit()">Milk Products</button>
+          </div>
+          <div class="col-lg-4 p-lg-4 mt-md-0 mt-4 producthomerowcol">
+            <img src="assets/images/mph.png" alt="" srcset=""
+              height="300px">
+            <button type="button" class="btn btn-primary mt-5 button-55" routerLink="/milk-product" (click)="exit()">Milk Products</button>
+          </div>
+          <!-- <div class="col-lg-"></div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-lg-5 mt-2 p-lg-4 p-5 mb-3" style="background-color: #EFEFEF; border-radius: 20px;" data-aos="zoom-in"
+  data-aos-duration="2500">
+  <div class="row ">
+    <div class="col-lg-6 youtubediv mb-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis atque earum expedita ex possimus 
+      ratione tempora pariatur, id commodi tenetur vitae ipsum obcaecati dignissimos provident odit. 
+      Minus unde perspiciatis quod iure deserunt qui repellendus aliquid ratione inventore. 
+      Veniam rerum repudiandae unde, aliquid nisi suscipit ducimus quam, 
+      sint blanditiis maiores laborum est minima itaque magnam voluptatem nemo minus 
+      amet quos sapiente totam placeat assumenda rem optio error. Voluptatum cupiditate 
+      porro quasi nemo at impedit alias rerum distinctio eveniet eligendi aliquid perspiciatis 
+      corrupt.
+    </div>
+    <div class="col-lg-6">
+      <youtube-player [videoId]="videoId" class="youtubeplayer" suggestedQuality="hd720" style="background-color: #EFEFEF; border-radius: 20px;">
+      </youtube-player>
+    </div>
+     
+  </div>
+ 
+</div>
+<!--  -->

@@ -1,0 +1,69 @@
+<div class="container-fluid headercontact">
+    <img src="assets/images/contactus.png" width="100%" alt="">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 mt-md-5 mt-3" align="center">
+            <h1>CONTACT-US</h1>
+        </div>
+        <div class="col-lg-6 mt-3">
+            <form  [formGroup]="ContactUS" #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)" >
+
+                <div class="row p-md-5 p-3">
+                    <div class="col-12 p-2 mt-5 namesEmail">
+                        <input type="text" formControlName="name" placeholder="NAME" />
+                        <div *ngIf="submitted && formControl.name.errors" class="text-danger">
+                            <div *ngIf="formControl.name.errors.required">Full Name is required.</div>
+                            <div *ngIf="formControl.name.errors.pattern">Valid Full Name is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5 p-2 namesEmail">
+                        <input type="text" formControlName="mail" placeholder="EMAIL" />
+                        <div *ngIf="submitted && formControl.mail.errors" class="text-danger">
+                            <div *ngIf="formControl.mail.errors.email">Email must be valid.</div>
+                            <div *ngIf="formControl.mail.errors.required">Email is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2 mt-5 namesEmail">
+                        <input type="text" formControlName="phone" placeholder="MOBILE NO" />
+                        <div *ngIf="submitted && formControl.phone.errors" class="text-danger">
+                            <div *ngIf="formControl.phone.errors.required">Contact Number is required.</div>
+                            <div *ngIf="formControl.phone.errors.pattern">Valid Contact Number is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2 mt-5 namesEmail">
+                        <input type="text" formControlName="city" placeholder="CITY" />
+                        <div *ngIf="submitted && formControl.city.errors" class="text-danger">
+                            <div *ngIf="formControl.city.errors.required">City is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2 mt-5 namesEmail">
+                        <input type="text" formControlName="country" placeholder="COUNTRY" />
+                        <div *ngIf="submitted && formControl.country.errors" class="text-danger">
+                            <div *ngIf="formControl.country.errors.required">Country is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-12 p-2 mt-5 namesEmail">
+                        <input type="text" formControlName="inquirytype" placeholder="INQUIRY TYPE" />
+                        <div *ngIf="submitted && formControl.inquirytype.errors" class="text-danger">
+                            <div *ngIf="formControl.inquirytype.errors.required">INQUIRY TYPE is required.</div>
+                        </div>
+                    </div>
+                    <div class="col-12 mt-5 namesEmail">
+                        <textarea formControlName="remark" cols="30" rows="10"
+                            placeholder="Detail of enquiry"></textarea>
+                        <div *ngIf="submitted && formControl.remark.errors" class="text-danger">
+                            <div *ngIf="formControl.remark.errors.required">Detail of enquiry is required</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 mt-5  mx-2 nutton">
+                        <input type="submit" class="btn btn-primary" class="butun p-1" value="SUBMIT" />
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-lg-6 p-md-5 p-3 mt-md-5 mt-0" style="overflow: hidden;">
+            <iframe class="mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3599.560929860139!2d84.65287887507684!3d25.552998477483634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d5f621a156151%3A0xb0eeb381cdb7019f!2sSHAHABAD%20DUGDH%20UTPADAK%20SAHKARI%20SANGH%20LIMITED!5e0!3m2!1sen!2sin!4v1685357855722!5m2!1sen!2sin" width="600" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</div>

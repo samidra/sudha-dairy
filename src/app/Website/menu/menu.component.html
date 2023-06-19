@@ -1,0 +1,186 @@
+
+<body>
+    <header class="section-header">
+      <div class="container-fluid pt-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-onscroll">
+          <div class="container-fluid  p-md-2 px-md-4 px-3 p-1 float-panel" data-top="0" data-scroll="300">
+  
+            <a class="navbar-brand navbarbrandclass"  href="#"> 
+              <img src="assets/images/logo1234.jpg" class="navbar-brand-img"  alt="" srcset="">
+
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse mx-lg-0 mx-2" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+                <li class="nav-item">
+                  <a class="nav-link pt-2" routerLink="/" (click)="exit()">HOME</a>
+                </li>
+              
+                <li class="nav-item">
+                  <a class="nav-link pt-2">
+                    <div class="dropdowna">
+                      <button class="dropbtna" routerLink="/Services" (click)="exit()">ABOUT US
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-contenta">
+                        <div class="row p-2 colarow">
+                          <div class="col-lg-12 columna">
+                            <a class="p-2" routerLink="aboutus/our-history" (click)="exit()">HISTORY</a>
+                            <hr>
+                            <a class="p-2" routerLink="aboutus/management" (click)="exit()">MANAGEMENT</a>
+                            <hr>
+                            <a class="p-2" routerLink="aboutus/direct-message" (click)="exit()">DIRECT MESSAGE</a>
+                            <hr>
+                            <a class="p-2" routerLink="aboutus/awards" (click)="exit()">AWARDS</a>
+                            <hr>
+                            <a class="p-2" routerLink="aboutus/ek-nazar" (click)="exit()">EK-NAZAR</a>
+                            <hr>
+                            <a class="p-2" routerLink="aboutus/list-of-bmc" (click)="exit()">LIST OF BMC</a>
+                            <hr>
+                            <a class="p-2" routerLink="aboutus/marketing-area" (click)="exit()">MARKETING AREA</a>
+                            <hr>
+                            <a class="p-2" routerLink="aboutus/organization-information" (click)="exit()">ORGANIZATION INFORMATION</a>
+                            <hr>
+                            <a class="p-2" routerLink="aboutus/our-projects" (click)="exit()">OUR PROJECTS</a>
+                            <hr>
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+  
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pt-2" routerLink="/annual-report" (click)="exit()">ANNUAL REPORTS</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link pt-2">
+                    <div class="dropdowna">
+                      <button class="dropbtna" routerLink="#" (click)="exit()">PRODUCTS
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-contentas">
+                        <div class="row p-2 colarows">
+                          <div class="col-lg-12 ">
+                            <a class="p-2" routerLink="/milk" (click)="exit()">MILK</a>
+                            <hr>
+                            <a class="p-2" routerLink="/milk-product" (click)="exit()">MILK PRODUCTS</a>
+
+                          </div>
+                         
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+  
+                </li>
+                
+                <li class="nav-item">
+                  <a class="nav-link pt-2" routerLink="/plants" (click)="exit()">PLANT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pt-2" routerLink="/tender" (click)="exit()">TENDER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pt-2" routerLink="/career" (click)="exit()">CAREER</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link pt-2" routerLink="/contact" (click)="exit()">CONTACT US</a>
+                </li>
+                <li class="nav-item ctn">
+                  <a routerLink="/login" (click)="exit()">
+                    <p class="p-2">LOGIN</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  
+  <router-outlet> </router-outlet>
+  
+  <!-- Footer -->
+  <div class="container-fluid footer p-3">
+    <div class="row">
+      <div class="col-12 px-md-5 pt-5 footlogo">
+        <img src="assets/images/logo1234.jpg" class="footlogoimg" alt="" srcset="">
+      </div>
+      <div class="col-12 mt-3 m3-5">
+        <div class="row mt-4 mx-md-5">
+          <div class="col-md-3 col-12">
+            <div class="row p-3">
+              <div class="col-12">
+                <div class="add">
+                  <span>Email:</span><br>
+                  aradairyara@gmail.com
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="add"><span>Contact:</span><br>
+                  06182-236694</div>
+              </div>
+              <div class="col-12">
+                <div class="add"><span>Location:</span><br>
+                  Shahabad Dugdh Utpadak <br>Sahakari Sangh LTD.
+                 <br>Katira, ARA, 802301, India</div>
+              </div>
+            </div>
+          </div>
+          <!-- ---------------------------------------- -->
+          <div class="col-md-3 col-sm-6 col-12">
+            <div class="row p-3">
+              <div class="col-12 quick">
+                <span>Quick Links</span>
+                <ul>
+                  <li><a routerLink="" (click)="exit()">HOME</a></li>
+                  <li><a routerLink="" (click)="exit()">ABOUT</a></li>
+                  <li><a routerLink="" (click)="exit()">ANNUAL REPORT</a></li>
+                  <li><a routerLink="/plants" (click)="exit()">PLANT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------------------------------- -->
+          <div class="col-md-2 col-sm-6 col-12">
+            <div class="row p-3">
+              <div class="col-12 quick">
+               <span>Quick Links</span>
+                <ul>
+                  <li><a routerLink="" (click)="exit()">TENDER</a></li>
+                  <li><a routerLink="" (click)="exit()">CAREER</a></li>
+                  <li><a routerLink="/contact" (click)="exit()">CONTACT</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-12 pb-2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1799.780464591908!2d84.65307199839478!3d25.5529985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398d5f621a156151%3A0xb0eeb381cdb7019f!2sSHAHABAD%20DUGDH%20UTPADAK%20SAHKARI%20SANGH%20LIMITED!5e0!3m2!1sen!2sin!4v1685949649536!5m2!1sen!2sin"  height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="border-radius: 20px; width: 100%;"></iframe>
+          </div>
+          <!-- -------------------------------------------- -->
+          
+          <div class="footline">
+            <hr>
+          </div>
+          <div class="col-12 pb-5 px-md-3 mt-5">
+            <div class="row">
+              <div class="col-lg-6 col-12 mt-md-0 mt-4 folink">
+                <p> &#169;2017 Shahabad Dugdh Utpadak Sahakari Sangh</p>
+              </div>
+              <div class="col-lg-6 col-12 mt-md-0 mt-4 folinkss">
+                <p> Developed and Designed by Victorious Infotech Pvt. Ltd.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
