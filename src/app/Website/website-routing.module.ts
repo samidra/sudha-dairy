@@ -19,11 +19,11 @@ const routes: Routes = [
         children: [
             {
                 path: '',
-                redirectTo: 'Home',
+                redirectTo: '',
                 pathMatch: 'full'
             },
             {
-                path: 'Home',
+                path: '',
                 component: HomeComponent,
             },
             {
